@@ -30,7 +30,7 @@ body {
     height: fit-content;
   }
 
-  &__name {
+  &__title {
     font-size: 12px;
     margin-inline: 16px;
     margin-top: 40px;
@@ -99,7 +99,7 @@ body {
     transform: scale(1.2);
   }
 
-  &:hover .card__name {
+  &:hover .card__title {
     color: #34568b;
   }
 
