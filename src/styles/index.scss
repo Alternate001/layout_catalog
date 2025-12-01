@@ -1,3 +1,21 @@
-body {
-  margin: 0;
+@use 'variables';
+@use 'stars';
+@use 'site-nav';
+@use 'card';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  padding-inline: 40px;
+  padding-block: 50px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 46px;
+  row-gap: 48px;
 }
