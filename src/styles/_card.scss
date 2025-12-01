@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 200px;
-  min-height: 408px;
+  height: 408px;
   justify-content: flex-start;
   align-items: center;
   background-color: variables.$secondary-theme-color;
@@ -44,7 +44,7 @@ body {
 
   &__code {
     font-size: 10px;
-    color: #616070;
+    color: variables.$code-color;
     margin-left: 16px;
     margin-bottom: 16px;
     margin-top: 4px;
@@ -93,14 +93,14 @@ body {
   }
 
   transition-property: all;
-  transition-duration: 0.3s;
+  transition-duration: variables.$transition-time;
 
   &:hover {
     transform: scale(1.2);
   }
 
   &:hover .card__title {
-    color: #34568b;
+    color: variables.$card-title-hover-color;
   }
 
   &__button {
@@ -112,7 +112,7 @@ body {
     }
 
     transition-property: all;
-    transition-duration: 0.3s;
+    transition-duration: variables.$transition-time;
 
     display: inline-flex;
     justify-content: center;
